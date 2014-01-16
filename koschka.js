@@ -1,0 +1,12 @@
+goog.addDependency("base.js", ['goog'], []);
+goog.addDependency("../cljs/core.js", ['cljs.core'], ['goog.string', 'goog.array', 'goog.object', 'goog.string.StringBuffer']);
+goog.addDependency("../clojure/string.js", ['clojure.string'], ['cljs.core', 'goog.string', 'goog.string.StringBuffer']);
+goog.addDependency("../cljs/reader.js", ['cljs.reader'], ['cljs.core', 'goog.string']);
+goog.addDependency("../mrhyde/guts.js", ['mrhyde.guts'], ['cljs.core']);
+goog.addDependency("../mrhyde/mrhyde.js", ['mrhyde.mrhyde'], ['cljs.core', 'clojure.string', 'cljs.reader', 'mrhyde.guts']);
+goog.addDependency("../clojure/set.js", ['clojure.set'], ['cljs.core']);
+goog.addDependency("../mrhyde/typepatcher.js", ['mrhyde.typepatcher'], ['mrhyde.mrhyde', 'cljs.core', 'clojure.set', 'mrhyde.guts']);
+goog.addDependency("../mrhyde/core.js", ['mrhyde.core'], ['cljs.core', 'mrhyde.typepatcher']);
+goog.addDependency("../mrhyde/funpatcher.js", ['mrhyde.funpatcher'], ['mrhyde.mrhyde', 'cljs.core', 'mrhyde.guts']);
+goog.addDependency("../strokes.js", ['strokes'], ['cljs.core', 'mrhyde.core', 'cljs.reader', 'mrhyde.funpatcher']);
+goog.addDependency("../koschka.js", ['koschka'], ['cljs.core', 'strokes']);

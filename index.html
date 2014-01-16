@@ -1,0 +1,25 @@
+<html>
+<body>
+  <style>
+    body {  font-size: 10px; font-family: arial; }
+    svg { background-color: #f7f7f7; }
+    g.vis { border: 1px solid #ccc; }
+    .probe circle { fill: steelblue; }
+    .probe text.sugar { text-anchor: middle; }
+    .probe text.hour { text-anchor: start; font-size: 8px; fill: #ccc; }
+    .axis path,
+    .axis line {
+      fill: none;
+      stroke: #000;
+      shape-rendering: crispEdges;
+    }
+
+  </style>
+  <div id="status">Loading&hellip;</div>
+  <script src="out/goog/base.js" type="text/javascript"></script>
+  <script src="koschka.js" type="text/javascript"></script>
+  <script src="http://d3js.org/d3.v3.min.js"></script>
+  <script type="text/javascript">goog.require("koschka");</script>
+
+</body>
+</html>
